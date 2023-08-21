@@ -54,6 +54,42 @@ class _TelaFormularioState extends State<TelaFormulario> {
                   ),
                 ],
               ),
+              TextFormField(
+                decoration: InputDecoration(
+                  label: Text("Endereço"),
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.local_activity),
+                ),
+              ),
+              Row(
+                children: [
+
+                  Expanded(
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        label: Text("E-mail"),
+                        border: OutlineInputBorder(),
+                        suffixIcon: Icon(Icons.email),
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(width: 30,),
+
+                    Expanded(
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        label: Text("Telefone"),
+                        border: OutlineInputBorder(),
+                        suffixIcon: Icon(Icons.phone),
+                      ),
+                    ),
+                  ),
+
+
+
+                ],
+              ),
             ],
           ),
         ),
